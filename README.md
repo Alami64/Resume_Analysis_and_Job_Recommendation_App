@@ -49,6 +49,6 @@ npm run dev
 
 ### Access the Application
 
-Open your web browser and navigate to [http://localhost:8000/].
+Open your web browser and navigate to [http://localhost:5173/].
 
 Upload your resume and start exploring the features!
