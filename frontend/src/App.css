@@ -1,0 +1,552 @@
+.App {
+  background-color: #FAF3EA;
+  text-align: center;
+  color: #0e3c26;
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  justify-content: center;
+  font-family: 'Libre Baskerville', sans-serif;
+}
+
+.menu-section {
+  width: 20%;
+  background-color: #EDE1D1; 
+  overflow-y: auto; 
+}
+
+.main-section {
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #FAF3EA;
+  overflow-y: auto; 
+}
+
+textarea {
+  flex: 1;
+  flex-grow:3;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  border-radius: 10px;
+  color: #0e3c26;
+  resize: none;
+  overflow: visible;
+  overflow-y: auto;
+  background: transparent;
+  height:20px;
+}
+
+.input-area button {
+  padding: 10px 20px;
+  border: none;
+  background:transparent;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  background-color: #FAF3EA;
+  border-radius: 30px;
+}
+
+.logo-icon {
+  height: 100px;
+  width:100px;
+  fill: #0e3c26;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 20px;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #0e3c26;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, .1);
+}
+
+.navbar div {
+  width: 100%;
+  text-align: center;
+}
+
+.navbar div a {
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #EDE1D1;
+  display: block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar div a:hover:not(.disabled) {
+  background-color: #EDE1D1;
+  color: #0e3c26;
+}
+
+.navbar div a.active {
+  background-color: #EDE1D1;
+  color: #0e3c26;
+  border-top: 3px solid #ffaa00;
+  border-bottom: 3px solid #FFA800;
+}
+
+.navbar div a.disabled {
+  pointer-events: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+.resume-upload-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  
+}
+
+.upload-resume-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-origin: padding-box;
+  width: fit-content; 
+  margin: auto;
+  border-radius: 60px;;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.label-text {
+  color: #0e3c26;
+  font-weight: bold; 
+}
+
+.button {
+  background-color: #EDE1D1;
+  color: #0e3c26; 
+  padding: 10px 15px; 
+  border-radius: 60px; 
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  margin: 10px 5px; 
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+
+}
+
+.button:hover {
+  background-color: #0e3c26;
+  color: #EDE1D1;
+}
+
+.pdf-keyword-container {
+  display: flex;
+  height: calc(100vh - 100px);
+  overflow: hidden;
+}
+
+.pdf-viewer,
+.keyword-extract {
+  width: 50%;
+  padding: 30px;
+  border-radius: 50px;
+  background-color: #EDE1D1;
+  margin: 10px;
+  overflow-y: auto;
+  background-color: rgba(255, 255, 255, 0.4); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.jobArea {
+  justify-content: center;
+  align-items: center;
+  background-origin: padding-box;
+  margin: auto;
+  border-radius: 60px;;
+  margin-bottom: 20px; 
+  background-color: rgba(255, 255, 255, 0.4); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-header{
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid-cell {
+  flex: 1;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination .page-item {
+  margin-right: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid #0e3c26;
+}
+
+.pagination .page-item.active {
+  font-weight: bold;
+}
+
+
+
+.info-button,
+.chat-button {
+  border: none;
+  background-color: #EDE1D1;
+  cursor: pointer;
+  border-radius: 50%; 
+  width: 40px; 
+  height: 40px; 
+  justify-content: center; 
+  align-items: center; 
+  transition: background-color 0.3s; 
+  margin-right: 10px;
+}
+
+
+.info-button:hover,
+.chat-button:hover {
+  background-color: #0e3c26;
+}
+
+
+.filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
+  background-origin: padding-box;
+  width: fit-content; 
+  margin: auto;
+  border-radius: 60px;;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.4); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.filters input[type="text"],
+.filters select {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #0e3c26; 
+  background-color: #EDE1D1; 
+  border: none;
+  border-radius: 60px;
+  outline: none; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer; 
+  text-align: center;
+  display: inline-block;
+  margin: 10px 5px; 
+}
+
+.filters input[type="text"]:focus,
+.filters select:focus {
+  box-shadow: 0 0 0 2px #A69986;
+}
+
+.input-with-icon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  
+}
+
+.input-with-icon input {
+  width: 100%;
+  padding: 10px 40px 10px 15px; 
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #EDE1D1; 
+}
+
+.input-with-icon .location-icon {
+  position: absolute;
+  right: 10px;  
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #0e3c26; 
+  font-size: 18px; 
+  top: 50%; 
+  transform: translateY(-50%);
+  padding: 0;
+  line-height: 1;
+}
+
+
+
+.resume-analysis-container {
+  display: flex;
+  height: calc(100vh - 100px);
+  overflow: hidden;
+}
+
+.job-description-viewer{
+
+  padding: 30px;
+  border-radius: 50px;
+  background-color: #EDE1D1;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.4); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.job-description-textarea{
+
+  height: 75%;
+  padding: 10px;
+  border-radius: 20px;
+  resize: none; 
+
+}
+
+.job-description-label {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+.clear-text-button {
+  background-color: #EDE1D1;
+  color: #0e3c26; 
+  padding: 10px 15px; 
+  border-radius: 60px; 
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+
+}
+
+.clear-text-button:hover {
+  background-color: #0e3c26;
+  color: #EDE1D1;
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #FAF3EA; 
+  padding: 20px;
+  border-radius: 10px; 
+  width: 60%; 
+  max-height: 80%; 
+  overflow-y: auto; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  border: none;
+  color: #0e3c26; 
+}
+
+.modal-content p {
+  margin-bottom: 10px; 
+  text-align: left; 
+}
+
+.modal-close {
+  float: right;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: #EDE1D1;
+  color: #0e3c26;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-close:hover {
+  background-color: #0e3c26;
+  color: #EDE1D1;
+}
+
+
+.chat-area {
+  display: flex;
+  width: 100%;
+  border-radius: 50px;
+  flex-direction: column;
+  justify-content: flex-end; 
+  margin: 10px;
+  padding: 30px;
+  border-radius: 50px;
+  overflow-y: auto;
+}
+
+
+
+
+
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  flex-grow: 1;
+  padding-bottom: 10px;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+  width: fit-content;
+  max-width: 80%;
+}
+
+.message.user {
+  background-color: rgb(245, 234, 220); 
+  color: #0e3c26; 
+  align-self: flex-end; 
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 10px; 
+  max-width: 80%;
+  font-weight: 600;
+  text-align: left;
+}
+
+.message.chatbot {
+  align-self: flex-start;
+  color: #0e3c26;
+  text-align: left;
+  font-weight:600;
+}
+
+.message p {
+  margin-bottom: 10px; 
+}
+
+.message.chatbot p {
+  text-indent: 20px; 
+}
+
+
+.timestamp {
+  font-size: 0.75em;
+  text-align: right;
+  margin-top: 5px;
+}
+
+.message.chatbot .timestamp {
+  color: #0e3c26;
+}
+
+.message.user .timestamp {
+  color: #0e3c26;
+}
+
+.input-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: #FCFAF6;
+  margin-top: 10px;
+}
+
+.input-area textarea {
+  width: 90%;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  resize: none; 
+}
+
+.input-area button {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0e3c26;
+  border: none;
+  cursor: pointer;
+}
+
+.input-area button img {
+  width: 24px;
+  height: 24px;
+}
+
+.send-icon {
+  filter: invert(100%);
+  
+}
